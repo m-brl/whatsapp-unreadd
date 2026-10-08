@@ -1,0 +1,6 @@
+/whatsapp-unreadd
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+/result

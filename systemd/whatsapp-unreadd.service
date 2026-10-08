@@ -1,0 +1,13 @@
+[Unit]
+Description=WhatsApp unread message counter daemon
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/whatsapp-unreadd
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
